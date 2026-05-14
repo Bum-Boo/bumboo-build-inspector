@@ -1,0 +1,39 @@
+# File Manifest
+
+Generated files:
+
+- `AGENTS.md`
+- `CLAUDE.md`
+- `README.md`
+- `REFERENCES.md`
+- `checklists/AI_GENERATED_CODE_CHECKLIST.md`
+- `checklists/DEPENDENCY_SUPPLY_CHAIN_CHECKLIST.md`
+- `checklists/DEPLOYMENT_OPERATIONS_CHECKLIST.md`
+- `checklists/PRODUCT_READINESS_CHECKLIST.md`
+- `checklists/SECURITY_PRIVACY_CHECKLIST.md`
+- `examples/claude_code_task_prompt.md`
+- `examples/codex_cli_task_prompt.md`
+- `examples/codex_web_task_prompt.md`
+- `examples/user_scope_intake_form.md`
+- `prompts/00_MASTER_POST_BUILD_AUDIT_GOAL.md`
+- `prompts/01_SCOPE_ROUTER.md`
+- `prompts/02_REPOSITORY_INTAKE_AND_SUMMARY.md`
+- `prompts/03_PRODUCT_STRATEGY_AUDIT.md`
+- `prompts/04_SECURITY_PRIVACY_AUDIT.md`
+- `prompts/05_AI_GENERATED_CODE_RISK_AUDIT.md`
+- `prompts/06_DEPENDENCY_SUPPLY_CHAIN_AUDIT.md`
+- `prompts/07_DEPLOYMENT_READINESS_AUDIT.md`
+- `prompts/08_TESTING_QUALITY_AUDIT.md`
+- `prompts/09_OPERATIONS_INCIDENT_RESPONSE_AUDIT.md`
+- `prompts/10_PERFORMANCE_SCALABILITY_AUDIT.md`
+- `prompts/11_LEGAL_LICENSE_COMPLIANCE_AUDIT.md`
+- `prompts/12_REMEDIATION_PLAN_GENERATOR.md`
+- `prompts/13_CODEX_FIX_CRITICAL_HIGH_GOAL.md`
+- `prompts/14_FINAL_RELEASE_DECISION.md`
+- `prompts/15_MULTI_AGENT_REPORT_COMPARISON.md`
+- `prompts/16_CREATE_GITHUB_REPO_FROM_KIT.md`
+- `templates/audit_report_template.md`
+- `templates/final_release_decision_template.md`
+- `templates/project_summary_template.md`
+- `templates/remediation_plan_template.md`
+- `templates/remediation_summary_template.md`
