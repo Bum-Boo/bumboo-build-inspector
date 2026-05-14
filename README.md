@@ -10,7 +10,7 @@ Most AI coding workflows focus on creating code. This kit focuses on what happen
 
 1. Inspect the repository.
 2. Identify the project type and stack.
-3. Audit product readiness, security, privacy, deployment, operations, dependencies, testing, legal risks, and AI-generated-code weaknesses.
+3. Audit product readiness, security, privacy, performance, deployment, operations, dependencies, testing, legal risks, and AI-generated-code weaknesses.
 4. Produce structured reports.
 5. Prioritize release blockers.
 6. Generate safe follow-up instructions for a coding agent.
@@ -25,7 +25,7 @@ This is not a pre-build scaffold. It is a **post-build release-readiness and ris
 - A root `AGENTS.md` file for agents that support repository-level instructions.
 - A `CLAUDE.md` file for Claude Code-oriented usage.
 - Scope-specific audit prompts.
-- Checklists for product, security, privacy, deployment, operations, dependencies, and AI-generated code.
+- Checklists for product, security, privacy, performance, deployment, operations, dependencies, and AI-generated code.
 - Report templates that agents can write into `reports/` in the target repository.
 - Example task prompts for Codex Web, Codex CLI, and Claude Code.
 
@@ -83,6 +83,7 @@ post_build_ai_auditor_prompt_kit/
 │  ├─ SECURITY_PRIVACY_CHECKLIST.md
 │  ├─ DEPENDENCY_SUPPLY_CHAIN_CHECKLIST.md
 │  ├─ DEPLOYMENT_OPERATIONS_CHECKLIST.md
+│  ├─ PERFORMANCE_SCALABILITY_CHECKLIST.md
 │  └─ AI_GENERATED_CODE_CHECKLIST.md
 ├─ templates/
 │  ├─ project_summary_template.md
@@ -262,3 +263,13 @@ Always produce a report.
 ## References
 
 See `REFERENCES.md` for source links and standards that informed this kit.
+## Demo Walkthrough
+
+이 프로젝트는 실행 앱이 아니라, 빌드가 끝난 프로젝트를 AI에게 점검시키기 위한 프롬프트/체크리스트 키트입니다.
+
+1. 점검할 프로젝트의 빌드 로그, 테스트 결과, 배포 대상 정보를 준비합니다.
+2. `CLAUDE.md` 또는 `checklists` 폴더의 체크리스트를 엽니다.
+3. Codex, Claude 같은 AI 도구에 체크리스트와 프로젝트 경로를 함께 전달합니다.
+4. AI가 반환한 보안, 배포, 의존성, 제품 준비 상태 지적 사항을 이슈 목록으로 정리합니다.
+
+![Build inspector guide](docs/demo-screenshots/guide-build-inspector.png)
