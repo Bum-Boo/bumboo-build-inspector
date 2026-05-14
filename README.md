@@ -272,4 +272,6 @@ See `REFERENCES.md` for source links and standards that informed this kit.
 3. Codex, Claude 같은 AI 도구에 체크리스트와 프로젝트 경로를 함께 전달합니다.
 4. AI가 반환한 보안, 배포, 의존성, 제품 준비 상태 지적 사항을 이슈 목록으로 정리합니다.
 
+아래 화면은 비개발자가 따라 할 수 있도록 만든 데모 가이드입니다. 왼쪽 순서대로 자료를 준비하고, 오른쪽 버튼/파일명을 눌러 필요한 프롬프트와 체크리스트를 열면 됩니다.
+
 ![Build inspector guide](docs/demo-screenshots/guide-build-inspector.png)
