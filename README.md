@@ -265,13 +265,13 @@ Always produce a report.
 See `REFERENCES.md` for source links and standards that informed this kit.
 ## Demo Walkthrough
 
-이 프로젝트는 실행 앱이 아니라, 빌드가 끝난 프로젝트를 AI에게 점검시키기 위한 프롬프트/체크리스트 키트입니다.
+This project is not a standalone app. It is a prompt and checklist kit for asking an AI coding agent to audit a project after the first build exists.
 
-1. 점검할 프로젝트의 빌드 로그, 테스트 결과, 배포 대상 정보를 준비합니다.
-2. `CLAUDE.md` 또는 `checklists` 폴더의 체크리스트를 엽니다.
-3. Codex, Claude 같은 AI 도구에 체크리스트와 프로젝트 경로를 함께 전달합니다.
-4. AI가 반환한 보안, 배포, 의존성, 제품 준비 상태 지적 사항을 이슈 목록으로 정리합니다.
+1. Prepare the target project's build logs, test results, and deployment target.
+2. Open `CLAUDE.md` or a checklist from the `checklists` folder.
+3. Give the checklist and project path to Codex, Claude, or another coding agent.
+4. Turn the returned security, deployment, dependency, and release-readiness notes into an issue list.
 
-아래 화면은 비개발자가 따라 할 수 있도록 만든 데모 가이드입니다. 왼쪽 순서대로 자료를 준비하고, 오른쪽 버튼/파일명을 눌러 필요한 프롬프트와 체크리스트를 열면 됩니다.
+The screenshot below is a non-developer demo guide. Prepare the materials in the order shown on the left, then open the prompt or checklist files shown on the right.
 
 ![Build inspector guide](docs/demo-screenshots/guide-build-inspector.png)
