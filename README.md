@@ -1,5 +1,18 @@
 # Post-Build AI Auditor Prompt Kit
 
+> A structured audit kit for reviewing software after the first AI-assisted build exists.
+
+[English](#english) | [한국어](#한국어) | [中文](#中文) | [日本語](#日本語)
+
+| Area | Detail |
+|---|---|
+| Use case | Post-build release-readiness and risk audit |
+| Works with | Codex, Claude Code, ChatGPT, and similar coding agents |
+| Default mode | Read-only audit before any modification |
+| Outputs | Project summaries, audit reports, remediation plans, and release decisions |
+
+## English
+
 A reusable prompt and agent-instruction kit for inspecting software projects **after an initial build already exists**.
 
 This kit is designed for projects that were built quickly with AI coding tools, vibe coding, no-code/low-code exports, or conventional development and now need a structured post-build audit before real users, production deployment, or commercialization.
@@ -275,3 +288,102 @@ This project is not a standalone app. It is a prompt and checklist kit for askin
 The screenshot below is a non-developer demo guide. Prepare the materials in the order shown on the left, then open the prompt or checklist files shown on the right.
 
 ![Build inspector guide](docs/demo-screenshots/guide-build-inspector.png)
+
+---
+
+## 한국어
+
+Post-Build AI Auditor Prompt Kit은 첫 빌드가 이미 존재하는 소프트웨어 프로젝트를 AI 코딩 에이전트에게 점검시키기 위한 프롬프트/체크리스트 모음입니다.
+
+초기 생성 자체가 아니라, “일단 돌아가는 것처럼 보이는 코드”를 실제 사용자, 배포, 상용화 전에 다시 점검하는 데 초점을 둡니다.
+
+### 핵심 흐름
+
+1. 저장소를 읽고 프로젝트 유형과 스택을 파악합니다.
+2. 제품 준비 상태, 보안, 개인정보, 성능, 배포, 운영, 의존성, 테스트, 법적 리스크를 점검합니다.
+3. 위험도 기준으로 보고서를 작성합니다.
+4. 사람이 수정 허용 범위를 고릅니다.
+5. 승인된 Critical/High 항목만 제한적으로 수정합니다.
+6. 테스트와 최종 릴리스 판단을 진행합니다.
+
+### 빠른 사용법
+
+```text
+Read AGENTS.md first.
+Then run a post-build audit using prompts/00_MASTER_POST_BUILD_AUDIT_GOAL.md.
+Do not modify code yet.
+Create the required reports under reports/.
+```
+
+### 데모 흐름
+
+1. 점검할 프로젝트의 빌드 로그, 테스트 결과, 배포 대상 정보를 준비합니다.
+2. `CLAUDE.md` 또는 `checklists` 폴더의 체크리스트를 엽니다.
+3. Codex, Claude 같은 AI 도구에 체크리스트와 프로젝트 경로를 함께 전달합니다.
+4. AI가 반환한 보안, 배포, 의존성, 제품 준비 상태 지적 사항을 이슈 목록으로 정리합니다.
+
+---
+
+## 中文
+
+Post-Build AI Auditor Prompt Kit 是一套用于在初始构建完成后审查软件项目的提示词和检查清单。
+
+它不负责生成项目骨架，而是关注“项目看起来已经能运行之后”需要进行的发布准备、风险、部署、安全和维护性审查。
+
+### 核心流程
+
+1. 读取仓库并识别项目类型和技术栈。
+2. 审查产品准备度、安全、隐私、性能、部署、运维、依赖、测试和法律风险。
+3. 生成按风险排序的报告。
+4. 由人工选择允许修复的范围。
+5. 只修复被批准的 Critical/High 项。
+6. 运行验证并给出最终发布判断。
+
+### 快速使用
+
+```text
+Read AGENTS.md first.
+Then run a post-build audit using prompts/00_MASTER_POST_BUILD_AUDIT_GOAL.md.
+Do not modify code yet.
+Create the required reports under reports/.
+```
+
+### 演示流程
+
+1. 准备目标项目的构建日志、测试结果和部署目标。
+2. 打开 `CLAUDE.md` 或 `checklists` 文件夹中的检查清单。
+3. 将检查清单和项目路径交给 Codex、Claude 或类似 coding agent。
+4. 把返回的安全、部署、依赖和发布准备度问题整理成 issue 列表。
+
+---
+
+## 日本語
+
+Post-Build AI Auditor Prompt Kit は、初回ビルドがすでに存在するソフトウェアプロジェクトを AI コーディングエージェントに監査させるためのプロンプト/チェックリスト集です。
+
+プロジェクトを新規生成するためのものではなく、「一応動いているように見える状態」から、実ユーザー、デプロイ、商用利用の前にリスクを確認することに焦点を当てています。
+
+### 基本フロー
+
+1. リポジトリを読み、プロジェクト種別と技術スタックを把握します。
+2. プロダクト準備、セキュリティ、プライバシー、性能、デプロイ、運用、依存関係、テスト、法務リスクを監査します。
+3. リスク順にレポートを作成します。
+4. 人間が修正してよい範囲を選びます。
+5. 承認された Critical/High 項目だけを限定的に修正します。
+6. 検証を実行し、最終的なリリース判断を行います。
+
+### クイックスタート
+
+```text
+Read AGENTS.md first.
+Then run a post-build audit using prompts/00_MASTER_POST_BUILD_AUDIT_GOAL.md.
+Do not modify code yet.
+Create the required reports under reports/.
+```
+
+### デモ手順
+
+1. 監査対象プロジェクトのビルドログ、テスト結果、デプロイ先情報を準備します。
+2. `CLAUDE.md` または `checklists` フォルダのチェックリストを開きます。
+3. チェックリストとプロジェクトパスを Codex、Claude などの coding agent に渡します。
+4. 返ってきたセキュリティ、デプロイ、依存関係、リリース準備に関する指摘を issue リストに整理します。
